@@ -8,14 +8,14 @@ app = Flask(__name__)
 
 @app.route('/status')
 def status():
-    timestamp = datetime.datetime.now(datetime.timezone.utc).isoformat(timespec='seconds') + 'Z'
+    timestamp = datetime.datetime.now(datetime.timezone.utc).isoformat(timespec='seconds').replace('+00:00', 'Z')
     uptime = round((time.time() - psutil.boot_time()) / 3600, 1)
     free_disk = round(psutil.disk_usage('/').free / (1024 * 1024))
     record1 = f"{timestamp}: uptime {uptime} hours, free disk in root: {free_disk} MBytes"
 
     # Log to Storage 
     try:
-        requests.post('http://storage:5050/log', data=record1, timeout=5)
+        requests.post('http://storage:5050/log', data=record1, headers={'Content-Type': 'text/plain'}, timeout=5)
     except requests.exceptions.RequestException as e:
         print(f"Failed to log to Storage: {e}")
 
