@@ -10,7 +10,7 @@ def add_log():
     record = request.data.decode('utf-8')  # Try decoding raw data
     if not record:  
         record = request.get_data().decode('utf-8')  
-    print(f"Received: {record}")  
+    # print(f"Received: {record}")  
     with open(LOG_FILE, 'a', encoding='utf-8') as f:  
         f.write(record + '\n')
     return '', 200

@@ -1,0 +1,15 @@
+Motivation to use LLM 
+
+I have used Node.js for this assignment. I knew the basics but I am not that comfortable with Node.js. So, I used LLM to code more efficiently and not to waste time by sticking on an unknown error.
+
+How and why LLM helped 
+
+LLM helped me with the topics that I was confused about. It also helped to find errors and debug the errors. And it was a good learning experience, my confusions regarding networking, persistent volumes got cleared. 
+ 
+Mistakes by LLM 
+
+I did not get the required response and LLM provided completely wrong answers many times. The reason for this might be the bad prompting. 
+
+What were things that LLM was not able to provide 
+
+I think because of bad prompting, I could not get the correct response. Otherwise, I think nowadays, LLMs are quite efficient. 

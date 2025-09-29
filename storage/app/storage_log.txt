@@ -1,0 +1,41 @@
+2025-09-29T13:15:00Z: Another record
+2025-09-29T13:48:00Z: Last record
+2025-09-29T11:18:20ZZ: uptime 50.6 hours, free disk in root: 66 MBytes
+2025-09-29T11:23:43+00:00Z: uptime 50.7 hours, free disk in root: 26870 MBytes
+2025-09-29T11:23:43ZZ: uptime 50.7 hours, free disk in root: 60 MBytes
+2025-09-29T12:00:12+00:00Z: uptime 0.3 hours, free disk in root: 941725 MBytes
+2025-09-29T12:22:27+00:00Z: uptime 0.6 hours, free disk in root: 941659 MBytes
+2025-09-29T12:22:27ZZ: uptime 0.6 hours, free disk in root: 6963 MBytes
+2025-09-29T13:41:12+00:00Z: uptime 1.3 hours, free disk in root: 941618 MBytes
+2025-09-29T13:41:13Z: uptime 1.3 hours, free disk in root: 941617 MBytes
+2025-09-29T15:30:55Z: uptime 3.1 hours, free disk in root: 941552 MBytes
+2025-09-29T15:30:56ZZ: uptime 3.1 hours, free disk in root: 6964 MBytes
+2025-09-29T15:33:13Z: uptime 3.1 hours, free disk in root: 941530 MBytes
+2025-09-29T15:33:14ZZ: uptime 3.1 hours, free disk in root: 6972 MBytes
+Timestamp1 2025-09-29T15:40:17Z: uptime 3.2 hours, free disk in root: 941462 MBytes
+Timestamp2 2025-09-29T15:40:17ZZ: uptime 3.2 hours, free disk in root: 6950 MBytes
+Timestamp1 2025-09-29T15:42:26Z: uptime 3.3 hours, free disk in root: 941425 MBytes
+Timestamp2 2025-09-29T15:42:26Z: uptime 3.3 hours, free disk in root: 6959 MBytes
+Timestamp1 2025-09-29T15:48:16Z: uptime 3.4 hours, free disk in root: 941426 MBytes
+Timestamp2 2025-09-29T15:48:16Z: uptime 3.4 hours, free disk in root: 6988 MBytes
+Timestamp1 2025-09-29T15:58:09Z: uptime 3.5 hours, free disk in root: 941357 MBytes
+Timestamp2 2025-09-29T15:58:09Z: uptime 3.5 hours, free disk in root: 993801 MBytes
+Timestamp1 2025-09-29T17:49:00Z: uptime 5.4 hours, free disk in root: 940242 MBytes
+Timestamp2 2025-09-29T17:49:01Z: uptime 5.4 hours, free disk in root: 992687 MBytes
+Timestamp1 2025-09-29T18:17:24Z: uptime 5.9 hours, free disk in root: 940242 MBytes
+Timestamp2 2025-09-29T18:17:25Z: uptime 5.9 hours, free disk in root: 992687 MBytes
+Timestamp1 2025-09-29T18:57:07Z: uptime 0.0 hours, free disk in root: 940205 MBytes
+Timestamp2 2025-09-29T18:57:07Z: uptime 0.0 hours, free disk in root: 992649 MBytes
+Timestamp1 2025-09-29T18:58:42Z: uptime 0.0 hours, free disk in root: 940205 MBytes
+Timestamp2 2025-09-29T18:58:42Z: uptime 0.0 hours, free disk in root: 992649 MBytes
+Timestamp1 2025-09-29T19:05:32Z: uptime 0.1 hours, free disk in root: 940206 MBytes
+Timestamp2 2025-09-29T19:05:32Z: uptime 0.1 hours, free disk in root: 992650 MBytes
+Timestamp1 2025-09-29T19:54:18Z: uptime 0.0 hours, free disk in root: 940183 MBytes
+Timestamp1 2025-09-29T19:54:35Z: uptime 0.0 hours, free disk in root: 940183 MBytes
+Timestamp1 2025-09-29T19:55:07Z: uptime 0.0 hours, free disk in root: 940183 MBytes
+Timestamp1 2025-09-29T19:56:55Z: uptime 0.1 hours, free disk in root: 940161 MBytes
+Timestamp2 2025-09-29T19:56:55Z: uptime 0.1 hours, free disk in root: 992605 MBytes
+Timestamp1 2025-09-29T19:57:00Z: uptime 0.1 hours, free disk in root: 940161 MBytes
+Timestamp2 2025-09-29T19:57:00Z: uptime 0.1 hours, free disk in root: 992605 MBytes
+Timestamp1 2025-09-29T19:57:22Z: uptime 0.1 hours, free disk in root: 940161 MBytes
+Timestamp2 2025-09-29T19:57:22Z: uptime 0.1 hours, free disk in root: 992605 MBytes
