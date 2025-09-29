@@ -11,13 +11,13 @@ app.get('/status', (req, res) => {
   const freeDiskMB = Math.floor(os.freemem() / (1024 * 1024)); 
   const record = `${timestamp}: uptime ${uptime} hours, free disk in root: ${freeDiskMB} MBytes`;
 
-  // Log to Storage
-  axios.post('http://localhost:5050/log', record, { headers: { 'Content-Type': 'text/plain' } })
+  // Log to Storage 
+  axios.post('http://storage:5050/log', record, { headers: { 'Content-Type': 'text/plain' } })
     .then(() => console.log('Logged to Storage'))
     .catch(err => console.error('Storage log failed:', err));
 
   // Log to vStorage volume
-  fs.appendFileSync('../../vstorage', record + '\n', 'utf-8');
+  fs.appendFileSync('/vstorage', record + '\n', 'utf-8');
 
   res.set('Content-Type', 'text/plain').send(record);
 });
