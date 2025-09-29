@@ -5,10 +5,20 @@ const fs = require('fs');
 
 const app = express();
 
+const disk = require('diskusage');
+
 app.get('/status', (req, res) => {
   const timestamp = new Date().toISOString().split('.')[0] + 'Z';
   const uptime = (os.uptime() / 3600).toFixed(1); // Uptime in hours
-  const freeDiskMB = Math.floor(os.freemem() / (1024 * 1024)); 
+  
+  let freeDiskMB;
+    try {
+            const { free } = disk.checkSync('/');
+            freeDiskMB = Math.floor(free / (1024 * 1024));
+        } catch (err) {
+            freeDiskMB = -1; // fallback if error
+        }
+
    const record = `Timestamp2 ${timestamp}: uptime ${uptime} hours, free disk in root: ${freeDiskMB} MBytes`;
 
 
