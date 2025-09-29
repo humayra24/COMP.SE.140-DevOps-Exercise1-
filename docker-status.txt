@@ -1,0 +1,12 @@
+CONTAINER ID   IMAGE                                 COMMAND                  CREATED         STATUS         PORTS                                         NAMES
+06e91259b15d   compse140-devops-exercise1-service2   "docker-entrypoint.s…"   8 minutes ago   Up 8 minutes   0.0.0.0:3000->3000/tcp, [::]:3000->3000/tcp   compse140-devops-exercise1-service2-1
+9a77335c2751   compse140-devops-exercise1-storage    "python server.py"       8 minutes ago   Up 8 minutes   0.0.0.0:5050->5050/tcp, [::]:5050->5050/tcp   compse140-devops-exercise1-storage-1
+66a606a08d9d   compse140-devops-exercise1-service1   "python main.py"         8 minutes ago   Up 8 minutes   0.0.0.0:8199->8199/tcp, [::]:8199->8199/tcp   compse140-devops-exercise1-service1-1
+NETWORK ID     NAME                                 DRIVER    SCOPE
+64f9cbf79c7e   bridge                               bridge    local
+e9f6fab52cc3   compse140-devops-exercise1_default   bridge    local
+154cbfae6f99   host                                 host      local
+3367c2a97485   ht_squad_backend                     bridge    local
+78c9eeb5e6b9   minecraft_default                    bridge    local
+033116c771b6   mongo_network                        bridge    local
+a2abd0eeb463   none                                 null      local
