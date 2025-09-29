@@ -1,7 +1,5 @@
-FROM python:3.11-slim
+FROM python:3.13
 WORKDIR /app
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
-COPY app/ /app/
-EXPOSE 5050
+COPY app/ .
+RUN pip install flask
 CMD ["python", "server.py"]

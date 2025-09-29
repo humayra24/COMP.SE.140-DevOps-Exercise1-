@@ -6,11 +6,14 @@ LOG_FILE = os.path.join(os.path.dirname(__file__), 'storage_log.txt')
 
 @app.route('/log', methods=['POST'])
 def add_log():
-    record = request.data.decode('utf-8')  
+    print(f"Raw data: {request.data}")  # Debug raw input
+    record = request.data.decode('utf-8')  # Try decoding raw data
+    if not record:  
+        record = request.get_data().decode('utf-8')  
     print(f"Received: {record}")  
-    with open(LOG_FILE, 'a') as f:  
-        f.write(record + '\n')  
-    return '', 200  
+    with open(LOG_FILE, 'a', encoding='utf-8') as f:  
+        f.write(record + '\n')
+    return '', 200
 
 @app.route('/log', methods=['GET'])
 def get_log():
