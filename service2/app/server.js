@@ -6,10 +6,11 @@ const fs = require('fs');
 const app = express();
 
 app.get('/status', (req, res) => {
-  const timestamp = new Date().toISOString().replace(/\.\d{3}/, '') + 'Z'; 
+  const timestamp = new Date().toISOString().split('.')[0] + 'Z';
   const uptime = (os.uptime() / 3600).toFixed(1); // Uptime in hours
   const freeDiskMB = Math.floor(os.freemem() / (1024 * 1024)); 
-  const record = `${timestamp}: uptime ${uptime} hours, free disk in root: ${freeDiskMB} MBytes`;
+   const record = `Timestamp2 ${timestamp}: uptime ${uptime} hours, free disk in root: ${freeDiskMB} MBytes`;
+
 
   // Log to Storage 
   axios.post('http://storage:5050/log', record, { headers: { 'Content-Type': 'text/plain' } })

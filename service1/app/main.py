@@ -11,7 +11,8 @@ def status():
     timestamp = datetime.datetime.now(datetime.timezone.utc).isoformat(timespec='seconds').replace('+00:00', 'Z')
     uptime = round((time.time() - psutil.boot_time()) / 3600, 1)
     free_disk = round(psutil.disk_usage('/').free / (1024 * 1024))
-    record1 = f"{timestamp}: uptime {uptime} hours, free disk in root: {free_disk} MBytes"
+    record1 = f"Timestamp1 {timestamp}: uptime {uptime} hours, free disk in root: {free_disk} MBytes"
+
 
     # Log to Storage 
     try:
